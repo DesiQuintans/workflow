@@ -67,7 +67,7 @@ quarto::quarto_render(
    the foreground without having your Console tied up, and without having 
    objects in your Environment changed.
 2. Background Jobs are integrated into RStudio, so you can see which part of 
-   the script is running, how long it has taken, etc.
+   the script is running, how long it has taken, cancel and restart it, etc.
 3. Background Jobs are run in isolated environments; there is no carry-over of 
    objects in the global Environment. This helps ensure reproducibility.
 4. Being able to define when scripts run sequentially or in parallel makes 
@@ -82,4 +82,5 @@ quarto::quarto_render(
    that captures what a script contains, what its output was, what its running 
    environment was, etc. The [`whirl`](https://github.com/NovoNordisk-OpenSource/whirl) 
    package has this, but `whirl`'s big issue right now is that it does not respect 
-   Errors (see <https://github.com/NovoNordisk-OpenSource/whirl/issues/202>).
+   Errors (see <https://github.com/NovoNordisk-OpenSource/whirl/issues/202>). 
+   `workflow` may get archived when `whirl` fixes this issue.
