@@ -13,7 +13,7 @@
 ## Context
 
 `workflow` is a lightweight package that uses RStudio's Background Jobs functionality to automate an analysis pipeline. 
-For example, your analysis would be split into several R scripts that each handle a particular task, and then you would 
+For example, you would write your analysis across several R scripts that each handle a particular task, and then you would 
 write a "Build everything" script that looks like this:
 
 ```r
@@ -29,7 +29,7 @@ workflow::run_sequentially(
 
 
 # 2. If there were no errors, run these scripts all at the same time in 
-# separate processes, as they have no dependencies on each other.
+# separate processes, because they have no dependencies on each other.
 
 workflow::run_in_parallel(
   c(
